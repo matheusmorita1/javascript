@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício com DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Título</h1>
+    <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum provident nam alias <mark class="marca">tenetur ad ratione harum</mark> voluptate magnam corporis modi quidem aliquam enim in nemo minima veritatis, obcaecati reiciendis.</p>
+    <script>
+        var corpo = window.document.body
+        var parag = window.document.getElementById('paragrafo')
+        var titul = window.document.querySelector('h1#titulo')
+        var marqt = window.document.querySelector('mark.marca')
+
+        corpo.style.background = 'black'
+        corpo.style.font = 'normal 18px Arial'
+        parag.style.color = 'white'
+        titul.style.color = 'whitesmoke'
+        marqt.style.background = 'lightgrey'
+        marqt.style.color = 'black'
+    </script>
+</body>
+</html>

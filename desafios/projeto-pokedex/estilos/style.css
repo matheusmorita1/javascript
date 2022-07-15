@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
+
+body {
+    background-color: rgb(236, 236, 236);
+    font: normal 18px 'Albert Sans', sans-serif;
+}
+
+main {
+    position: relative;
+    height: 98vh;
+}
+
+strong {
+    color: rgb(29, 29, 201);
+}
+
+input::placeholder {
+    font: normal 16px Arial;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 20px;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 10px;
+}
+
+#titulo {
+    text-align: center;
+    font-weight: 900;
+}
+
+#logo {
+    width: 100%;
+}
+
+#nome {
+    font: bold 18px sans-serif;
+    color: rgb(29, 29, 201);
+}
+
+#botao {
+    background-color: rgb(29, 29, 201);
+    color: white;
+}
+
+#botao:hover {
+    background-color: rgb(44, 44, 238);
+    transition-duration: 500ms;
+}
+
+.quadro {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font: bolder 16px 'Albert Sans', sans-serif;
+}
+
+#iresultado {
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+    background-color: #FCA311;
+}
+
+#iresultado p {
+    text-align: center;
+}
+
+#iresultado img {
+    display: block;
+    margin: auto;
+    width: 200px;
+}

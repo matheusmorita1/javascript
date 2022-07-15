@@ -1,0 +1,35 @@
+body {
+    font: normal 18px Arial;
+    background-color: silver;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+}
+
+div#container {
+    width: 500px;
+    height: 330px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.658);
+}
+
+#container > p {
+    color: black;
+    text-align: center;
+}
+
+.imagem {
+    width: 280px;
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 18px Arial;
+        }
+
+        #questao {
+            width: 800px;
+            margin: auto;
+        }
+
+        #questao > h1 {
+            padding: 10px;
+            margin-bottom: 0px;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+
+        #questao > p {
+            padding: 10px;
+            margin-top: 0px;
+            background-color: orange;
+            text-align: justify;
+        }
+
+        #container {
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+            margin: auto;
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+
+        #container > h1 {
+            text-align: center;
+            color: rgb(241, 241, 241);
+        }
+
+        #container > input {
+            display: block;
+            width: 100px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        #resultado {
+            height: 200px;
+            padding: 5px;
+            margin: auto;
+            background-color: rgb(66, 66, 66);
+        }
+    </style>
+</head>
+<body>
+    <div id="questao">
+        <h1>Questão do Pescador</h1>
+        <p>João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.</p>
+    </div>
+    
+    <div id="container">
+        <h1>Calculador de Pesca</h1>
+        <input type="number" name="peso" id="peso">
+        <input type="button" value="Calcular" onclick="clicar()">
+        <div id="resultado"><p>Resultado...</p></div>
+
+        <script>
+            function clicar() {
+                var resultado = document.querySelector('div#resultado')
+                var peso = Number(document.getElementById('peso').value)
+
+                resultado.innerHTML = `<p>Você pescou ${peso}Kg de peixe.</p>`
+
+                if (peso > 50) {
+                    var exc = peso - 50
+                    var multa = exc * 4
+
+                    resultado.innerHTML = `<p>Você pescou ${exc}Kg a mais do que deveria e sofrerá uma multa de ${multa.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}.</p>`
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

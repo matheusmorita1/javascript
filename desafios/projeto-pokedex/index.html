@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <h3 id="titulo">Trabalhando com <strong>HTML</strong>, <strong>CSS</strong> e usando o <strong>JavaScript</strong> para fazer consultas.</h3>
+            <hr>
+            <img src="imgs/pokemon-logo.png" alt="Logo Pokémon" id="logo">
+            <form action="">
+                <label for="ipoke" id="nome">Nome ou Número do Pokémon:</label>
+                <input type="text" name="poke" class="quadro" id="ipoke" placeholder="Ex: Bulbasaur ou 001">
+                <input type="button" value="Pesquisar" id="botao" class="quadro" onclick="clicou()">
+                <div class="quadro" id="iresultado">...</div>
+            </form>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font: normal 18px Arial;
+}
+
+#container {
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    background-color: silver;
+}
+
+#calculadora {
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+    background-color: lightblue;
+}
+
+#calculadora > h1 {
+    text-align: center;
+}
+
+#calculadora > input {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#res {
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: lightblue;
+}
+
+#res > p {
+    text-align: center;
+    line-height: 150px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratando dados</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font: normal 18px Arial;
+        }
+
+        h1 {
+            color: rgb(95, 95, 207);
+        } /*Editando um título*/
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já estou livre da maldição!</p> <!--Esse é um parágrafo-->
+    <script>
+        var n1 = Number(window.prompt('Digite um número'))
+        var n2 = Number(window.prompt('Digite outro número'))
+        var soma = n1 + n2
+        alert(`${n1} + ${n2} = ${soma}`) // formato template string
+        // (string + string) para concatenação
+        // (number + number) para soma
+    </script>
+</body>
+</html>

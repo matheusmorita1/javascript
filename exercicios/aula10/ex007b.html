@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="calculadora">
+            <h1>Calculadora</h1>
+            <input type="number" name="tn1" id="tn1">
+            <input type="number" name="tn2" id="tn2">
+            <input type="button" value="Somar" id="botao">
+        </div>
+        <div id="res"><p>Resultado...</p></div>
+    </div>
+
+    <script>
+        var resul = document.querySelector('div#res')
+        var botao = document.querySelector('input#botao')
+        botao.addEventListener('click', clicou)
+
+        function clicou() {
+            var n1 = Number(document.querySelector('input#tn1').value)
+            var n2 = Number(document.querySelector('input#tn2').value)
+            var soma = n1 + n2
+
+            resul.innerHTML = `<p>A soma entre ${n1} e ${n2} é igual a ${soma}</p>`
+        }
+    </script>
+</body>
+</html>
