@@ -1,0 +1,30 @@
+body {
+    font: normal 18px Arial;
+    background-color: rgb(122, 122, 122);
+}
+
+#container {
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+}
+
+#container h1 {
+    text-align: center;
+    color: rgb(38, 125, 255);
+}
+
+#container div {
+    margin: 10px 0px;
+}
+
+div > input {
+    width: 50%;
+    padding: 5px;
+    font: normal 18px Arial; 
+}
+
+#resultado {
+    text-align: center;
+}
